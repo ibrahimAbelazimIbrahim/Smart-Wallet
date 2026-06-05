@@ -1,0 +1,12 @@
+local folder
+
+E:\programing\groups\fri\Smart Wallet
+index.html
+style.css
+app.js
+
+
+git
+----
+cd "E:\programing\groups\fri\Smart Wallet"
+git init
