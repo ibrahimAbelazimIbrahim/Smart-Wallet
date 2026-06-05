@@ -10,3 +10,16 @@ git
 ----
 cd "E:\programing\groups\fri\Smart Wallet"
 git init
+git add . 
+git commit -m "ملفات المشروع اول مره تترفع"
+
+
+github
+-------
+rfatk03@gmail.com
+git remote add origin https://github.com/ibrahimAbelazimIbrahim/Smart-Wallet.git
+git branch -M main
+git push -u origin main
+
+لو عندك حسابات جيت اخرى
+git remote set-url origin https://rfatk03@github.com/ibrahimAbelazimIbrahim/Smart-Wallet.git
