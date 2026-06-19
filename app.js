@@ -25,3 +25,5 @@ async function loadData() {
     balanceEl.innerText = wallet.balance;
   }
 }
+
+loadData();
