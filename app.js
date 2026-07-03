@@ -15,14 +15,18 @@ const btnExpense = document.getElementById("btn-expense");
 // داله لجلب البيانات من قاعدة البيانات
 
 async function loadData() {
-  let { data: wallet, erro } = await supabaseClient
-    // جلب الرصيد
-    .from("wallet")
-    .select("balance")
-    .single();
+  try {
+    let { data: wallet, erro } = await supabaseClient
+      // جلب الرصيد
+      .from("wallet")
+      .select("balance")
+      .single();
 
-  if (wallet) {
-    balanceEl.innerText = wallet.balance;
+    if (wallet) {
+      balanceEl.innerText = wallet.balance;
+    }
+  } catch (err) {
+    console.log("حصل خطا غير متوقع ");
   }
 }
 
